@@ -18,10 +18,16 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",  // Important to set base URL correctly
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["app/*"]  // Ensure this points to the `app` directory or the correct directory where your components are located
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
